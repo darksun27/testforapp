@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.chromecustomtabexperiment",
+    "sha256_cert_fingerprints":
+    ["E3:28:06:AA:E1:BC:4D:4F:C0:B3:74:F1:A6:B6:23:3B:4E:14:E7:23:41:48:E2:02:EC:8D:AC:1B:CE:66:F4:8D"]
+  }
+}]
