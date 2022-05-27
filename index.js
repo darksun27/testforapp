@@ -10,8 +10,4 @@ if(document.cookie == "") {
     document.getElementById("cookie_info").innerHTML = document.cookie;
 }
 console.log("cookie stored");
-const sleep = async (time) => {return new Promise(resolve => setTimeout(resolve, time))}
-sleep(2000).then(() => {
-    console.log("closing tab");
-    open(location, '_self').close();
-})
+
