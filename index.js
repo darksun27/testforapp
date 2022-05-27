@@ -10,4 +10,5 @@ if(document.cookie == "") {
     document.getElementById("cookie_info").innerHTML = document.cookie;
 }
 console.log("cookie stored");
+window.location = "https://merry-arithmetic-d4fb40.netlify.app/openApp";
 
