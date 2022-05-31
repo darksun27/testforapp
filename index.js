@@ -10,5 +10,14 @@ if(document.cookie == "") {
     document.getElementById("cookie_info").innerHTML = document.cookie;
 }
 console.log("cookie stored");
-window.location = "com.example.chromecustomtabexperiment://merry-arithmetic-d4fb40.netlify.app/openApp";
 
+const sleep = (time) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, time);
+    });
+}
+sleep(2000);
+
+document.getElementsByClassName("loader").style.visibility = "hidden";
+
+window.location = "com.example.chromecustomtabexperiment://merry-arithmetic-d4fb40.netlify.app/openApp";
