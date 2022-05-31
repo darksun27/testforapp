@@ -4,11 +4,11 @@ const cred = urlParams.get("cred");
 if(cred) {
     document.cookie = "cred="+cred;
 }
-if(document.cookie == "") {
-    document.getElementById("cookie_info").innerHTML = "No Cookie Found";
-} else {
-    document.getElementById("cookie_info").innerHTML = document.cookie;
-}
+// if(document.cookie == "") {
+//     document.getElementById("cookie_info").innerHTML = "No Cookie Found";
+// } else {
+//     document.getElementById("cookie_info").innerHTML = document.cookie;
+// }
 console.log("cookie stored");
 
 const sleep = (time) => {
@@ -16,8 +16,11 @@ const sleep = (time) => {
         setTimeout(resolve, time);
     });
 }
-sleep(2000);
+sleep(2000).then(() => {
+    document.getElementById("spinner").style.display = "none";
+    document.getElementById("success").style.display = "flex";
+});
 
-document.getElementsByClassName("loader").style.visibility = "hidden";
-
-window.location = "com.example.chromecustomtabexperiment://merry-arithmetic-d4fb40.netlify.app/openApp";
+const onClickHandler = () => {
+    window.location = "com.example.chromecustomtabexperiment://merry-arithmetic-d4fb40.netlify.app/openApp";
+}
