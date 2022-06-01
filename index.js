@@ -5,10 +5,10 @@ const cred = urlParams.get("cred");
 if(cred) {
     window.localStorage.setItem('cred', cred);
 }
-if(window.localStorage.setItem('cred', cred) == null) {
+if(window.localStorage.getItem('cred') == null) {
     document.getElementById("cookie_info").innerHTML = "No LS Found";
 } else {
-    document.getElementById("cookie_info").innerHTML = window.localStorage.setItem('cred', cred);;
+    document.getElementById("cookie_info").innerHTML = window.localStorage.getItem('cred');
 }
 console.log("cookie stored");
 
