@@ -8,7 +8,7 @@
   }
 },
  {"relation":["delegate_permission/common.handle_all_urls","delegate_permission/common.get_login_creds"],
-  "target":{"namespace":"web","site":"https://merry-arithmetic-d4fb40.netlify.app/"}},
+  "target":{"namespace":"web","site":"merry-arithmetic-d4fb40.netlify.app/"}},
  {"relation":["delegate_permission/common.handle_all_urls","delegate_permission/common.get_login_creds"],
   "target":{
     "namespace":"android_app","package_name":"com.amazon.zhichyue.emptymapapp",
