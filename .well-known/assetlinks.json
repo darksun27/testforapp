@@ -6,4 +6,12 @@
     "sha256_cert_fingerprints":
     ["E3:28:06:AA:E1:BC:4D:4F:C0:B3:74:F1:A6:B6:23:3B:4E:14:E7:23:41:48:E2:02:EC:8D:AC:1B:CE:66:F4:8D"]
   }
-}]
+},
+ {"relation":["delegate_permission/common.handle_all_urls","delegate_permission/common.get_login_creds"],
+  "target":{"namespace":"web","site":"https://merry-arithmetic-d4fb40.netlify.app/"}},
+ {"relation":["delegate_permission/common.handle_all_urls","delegate_permission/common.get_login_creds"],
+  "target":{
+    "namespace":"android_app","package_name":"com.amazon.zhichyue.emptymapapp",
+     "sha256_cert_fingerprints":
+    ["2C:FA:6C:08:D3:1F:6A:50:A7:B8:D8:D4:3D:89:12:63:AD:F6:6E:63:F8:8E:A1:FC:BA:D0:0F:92:E8:FA:1A:8A"]}}
+]
